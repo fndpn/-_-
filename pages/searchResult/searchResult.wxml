@@ -1,0 +1,17 @@
+<!--pages/searchResult/searchResult.wxml-->
+<view class="headbox">
+  <view class="headitem">搜索结果</view>
+</view>
+
+
+<view class="musicbox">
+  <view class="item" wx:for="{{array}}" wx:key="this">
+    <view class="serial">{{index+1}}</view>
+    <view class="txtbox">
+     <text class="mname">{{item.name}}</text>
+    </view>
+    <view class="playimg" bindtap="playLink" data-index="{{item.idx}}">
+    <image class="playimg" src="/image/music_play.png"></image>
+    </view>
+  </view>
+</view>

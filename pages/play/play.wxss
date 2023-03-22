@@ -1,0 +1,72 @@
+/* pages/play/play.wxss */
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(226, 220, 206);
+}
+.musicName{
+  position: relative;
+  text-align: center;
+  line-height: 100rpx;
+}
+swiper{
+  height: 71.7%;
+  flex: 1;
+}
+swiper .imgbox{
+  display: flex;
+}
+swiper swiper-item image{
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  border: 100rpx solid #444444;
+  box-shadow: 3rpx 3rpx 30rpx black;
+  margin: auto;
+  margin-top: 100rpx;
+
+  animation: imgplay 15s linear infinite;
+}
+@keyframes imgplay{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.bottom{
+  height: 20%; 
+}
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/*进度条*/
+.timebox{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+.timebox view{
+  width: 80rpx;
+  font-size: 28rpx;
+  text-align: center;
+  
+}
+.timebox slider{
+  flex: 1;
+}

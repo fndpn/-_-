@@ -1,0 +1,36 @@
+<!--pages/find/find.wxml-->
+<view class="main"> 
+  <!--搜索功能-->
+  <view class="topbox">
+    <input placeholder="发现歌曲" type="text" class="txt" bindinput="musicNameInput"></input>
+    <view bindtap="searchMusic" class="btn">
+      <image src="/image/search.png"></image>
+    </view>
+  </view>
+  <!--热门推荐-->
+  <view class="titlebox">
+    <view class="txt">热门推荐</view>
+    <view class="txt_r">更多</view>
+  </view>
+  <view class="hotlist clearfix" >
+    <view class="hotitem" wx:for="{{hotmusic}}" wx:key="this">
+      <image src="{{item.image}}" bindtap="playLink" data-index="{{item.idx}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!--专辑列表-->
+  <view class="titlebox">
+    <view class="txt">专辑推荐</view>
+  </view>
+  <view class="hotlist clearfix" >
+    <view class="hotitem" wx:for="{{album}}" wx:key="this">
+      <image src="{{item.image}}" bindtap="albumLink" data-index="{{item.idx}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view class="canary"></view><!--占位，没什么实际用处-->
+
+<music_menu name="{{global_name}}" ishidden="{{global_ishidden}}"></music_menu>

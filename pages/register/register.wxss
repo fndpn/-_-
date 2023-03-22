@@ -1,0 +1,24 @@
+/* pages/register/register.wxss */
+.userinfo {
+  height: 100rpx;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatarBtn {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.avatarImg {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 100%;
+}
+.nikenameInput {
+  width: 350rpx;
+}
+.registerBtn {
+  margin-top: 30rpx;
+}

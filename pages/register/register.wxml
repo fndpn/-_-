@@ -1,0 +1,15 @@
+<!--pages/register/register.wxml-->
+<view>注册/修改头像id:</view>
+<view class="userinfo">
+  <text>个人头像</text>
+  <button size="mini" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" 
+  style="width: 350rpx; padding: 0; margin:0; text-align: left;">
+    <image class="avatarImg" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}"></image>
+    <text wx:else>请选择头像</text>
+  </button> 
+</view>
+<view class="userinfo">
+  <text>个人昵称</text>
+  <input type="nickname" placeholder="请输入昵称" bindblur="getNickName" class="nikenameInput"/>
+</view>
+<button type="primary" class="registerBtn" bindtap="register">点击完成</button>

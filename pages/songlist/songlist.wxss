@@ -1,0 +1,84 @@
+/* pages/songlist/songlist.wxss */
+.Page{
+  padding: 5rpx;
+  box-sizing: 26rpx;
+}
+swiper{
+  width: 99%;
+  height: 300rpx;
+  margin: 0 auto;
+  padding: 5rpx;
+}
+swiper swiper-item{
+  width: 100%;
+}
+swiper-item image{
+  display: block;
+  width: 99%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.title{
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #333;
+}
+.hotlist{
+  height: 300rpx;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+}
+.hotlist .item{
+  width: 200rpx;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.hotlist .item image{
+  width: 208rpx;
+  height: 208rpx;
+  border-radius: 10rpx;
+  padding-top: 0rpx;
+}
+.hotlist .item text{
+  font-size: 28rpx;
+  color: #4d4d4d;
+}
+
+
+.musicbox .item{
+  display: flex;
+  padding-left: 10rpx;
+  margin: 0 32rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgb(236,236,236);
+}
+.item .txtbox{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+.item .playimg{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+}
+.item .playimg image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto;
+}
+.item .txtbox .mname{
+  font-size: 35rpx;
+  width: 550rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item .txtbox .name{
+  font-size: 28rpx;
+  color: #777;
+}
+
+

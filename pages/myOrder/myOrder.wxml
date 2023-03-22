@@ -1,0 +1,18 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class="headbox">
+  <view class="headitem">歌曲</view>
+  <view class="headitem">坑位</view>
+</view>
+
+
+<view class="musicbox">
+  <view class="item" wx:for="{{collect}}" wx:key="this">
+    <view class="serial">{{index+1}}</view>
+    <view class="txtbox">
+     <text class="mname">{{item}}</text>
+    </view>
+    <view class="playimg" bindtap="playLink" data-index="{{collectid[index]}}">
+    <image class="playimg" src="/image/music_play.png"></image>
+    </view>
+  </view>
+</view>

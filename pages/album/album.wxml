@@ -1,0 +1,29 @@
+<!--pages/album/album.wxml-->
+<view class="bgImage">
+  <image src="{{img}}"></image>
+</view>
+
+<view class="albummessage">
+  <view class="albumimg">
+    <image src="{{img}}"></image>
+  </view>
+  <view class="message">
+    <view class="name">{{name}}</view>
+    <view class="author">{{author}}</view>
+    <view class="issue">发行时间: {{data}}</view>
+  </view>
+</view>
+
+<view class="musicbox">
+  <view class="item" wx:for="{{array}}" wx:key="this">
+    <view class="serial">{{index+1}}</view>
+    <view class="txtbox">
+     <text class="mname">{{item}}</text>
+    </view>
+    <view class="playimg" bindtap="playLink" data-index="{{arrayid[index]}}">
+    <image class="playimg" src="/image/music_play.png"></image>
+    </view>
+  </view>
+</view>
+
+

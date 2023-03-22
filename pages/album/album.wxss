@@ -1,0 +1,103 @@
+/* pages/album/album.wxss */
+page{
+  box-sizing: border-box;
+}
+.albummessage{
+  height: 380rpx;
+  padding: 10rpx;
+}
+.bgImage{
+  position: absolute;
+  height:400rpx;
+  width:100%;
+  z-index: -1;
+  opacity: 1;
+  overflow: hidden;
+  border-radius: 100% 100% 100% 100% / 0% 0% 7% 7%;
+}
+.bgImage image{
+  height:130%;
+  width:130%;
+  filter:blur(12px);
+}
+
+.albumimg{
+  padding-left: 20rpx;
+  padding-top: 40rpx;
+}
+.albumimg image{
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 20rpx;
+  float: left;
+  border-radius: 10rpx;
+}
+.message{
+  float: left;
+  overflow: hidden;
+  height: 300rpx;
+}
+.message .name{
+  padding-left: 40rpx;
+  line-height: 90rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: rgb(231, 221, 221);
+}
+.message .author{
+  padding-left: 70rpx;
+  font-size: 26rpx;
+  font-weight: 300rpx;
+  color:  rgb(231, 221, 221);
+}
+.message .issue{
+  position: relative;
+  top: 140rpx;
+  padding-left: 55rpx;
+  margin-bottom: 30rpx;
+  font-size: 24rpx;
+  color:rgb(184, 181, 181);
+}
+
+
+
+.musicbox .item{
+  display: flex;
+  padding-left: 10rpx;
+  margin: 0 20rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgb(236,236,236);
+}
+.item .serial{
+  float: left;
+  padding-top: 11rpx;
+  margin: 0;
+}
+.item .txtbox{
+  display: flex;
+  margin: 0 30rpx;
+  flex-direction: column;
+  flex:1;
+}
+.item .playimg{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+}
+.item .playimg image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto;
+}
+.item .txtbox .mname{
+  font-size: 35rpx;
+  padding-top: 15rpx;
+  width: 550rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item .txtbox .name{
+  font-size: 28rpx;
+  color: #777;
+}

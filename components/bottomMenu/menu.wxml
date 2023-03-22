@@ -1,0 +1,6 @@
+<!--components/bottomMenu/menu.wxml-->
+<view class="bottommenu">
+  <view class="name_txt">{{name}}</view>
+  <image src="/image/pause.png" hidden="{{!ishidden}}" bindtap="isshow"></image>
+  <image src="/image/play.png" hidden="{{ishidden}}" bindtap="isshow"></image>
+</view>

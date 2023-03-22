@@ -1,0 +1,46 @@
+<!--pages/songlist/songlist.wxml-->
+<view class="Page">
+<swiper indicator-dots="true" indicator-color="rgba(255,255,255,0.5)"
+  indicator-active-color="rgba(194,12,12,1)" autoplay="true" circular="true">
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="title">热门歌手</view>
+<view class="hotlist">
+  <block wx:for="{{singermessage}}" wx:key="this" wx:for-index="in">
+    <view class="item" data-index="{{in}}" bindtap="hotlink">
+     <image src="{{item.cover}}"></image>
+     <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>
+
+<view class="title">最新音乐</view>
+<view class="musicbox">
+  <view class="item" wx:for="{{newmusic}}" wx:key="this">
+    <view class="txtbox">
+     <text class="mname">{{item.name}}</text>
+     <text class="name">{{item.author}}</text>
+    </view>
+    <view class="playimg" bindtap="playLink" data-index="{{item.idx}}">
+    <image class="playimg" src="/image/music_play.png"></image>
+    </view>
+  </view>
+    
+  <view class="musicbox"><!--占位用，没什么实际用途-->
+  <view class="item">
+    <view class="txtbox">
+      <view class="mname">{{2}}</view>
+     <view class="name">{{3}}</view>
+    </view>
+  </view>
+  </view>
+</view>
+
+</view>
+
+<music_menu name="{{global_name}}" ishidden="{{global_ishidden}}"></music_menu>

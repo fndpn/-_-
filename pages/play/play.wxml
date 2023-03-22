@@ -1,0 +1,30 @@
+<!--pages/play/play.wxml-->
+<view class="bg">
+  
+  <view class="musicName">{{musicarray[0].name}}</view>
+  <swiper>
+    <swiper-item class="imgbox">
+      <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.wJLFkzbEKTPwSY5fiyH4RwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></image>
+    </swiper-item>
+  </swiper>
+
+
+<view class="bottom">
+  <!--进度条-->
+  <view class="timebox">
+    <view>{{currentTime}}</view>
+    <slider block-size="16"></slider>
+    <view>{{end}}</view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <image src="/image/collect.png" hidden="{{iscollect}}" bindtap="setcollect"   data-index="{{[musicarray[arrayidx].idx,musicarray[arrayidx].name]}}"></image>
+    <image src="/image/collected.png" hidden="{{!iscollect}}" bindtap="cancelcollect" data-index="{{[musicarray[arrayidx].idx,musicarray[arrayidx].name]}}"></image>
+    <image src="/image/pause.png" hidden="{{!isplay}}" bindtap="isshow"></image>
+    <image src="/image/play.png" hidden="{{isplay}}" bindtap="isshow"></image>
+    <image src="/image/stop.png" bindtap="musicStop"></image>
+  </view>
+</view>
+
+
+</view>

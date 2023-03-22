@@ -1,0 +1,24 @@
+/* components/bottomMenu/menu.wxss */
+.bottommenu{
+  position: fixed;
+  width: 100%;
+  bottom: 0rpx;
+  background-color: white;
+  height: 90rpx;
+}
+.name_txt{
+  float: left;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+  width: 550rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bottommenu image{
+  height: 70rpx;
+  width: 70rpx;
+  float: right;
+  padding: 10rpx;
+  padding-right: 40rpx;
+}

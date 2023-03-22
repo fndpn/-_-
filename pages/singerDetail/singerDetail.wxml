@@ -1,0 +1,13 @@
+<!--pages/singerDetail/singerDetail.wxml-->
+<view class="imgshow">
+  <image src="{{singerMessage[0].image}}"></image>
+  <view class="txtbox">
+    <view class="name">{{singerMessage[0].name}}</view>
+    <view class="txt">歌手</view>
+  </view>
+</view>
+
+<view class="title">歌手简介</view>
+<view class="content">
+  {{singerMessage[0].message}}
+</view>

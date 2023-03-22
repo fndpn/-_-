@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/songlist/songlist",
+        "pages/find/find",
+        "pages/my/my",
+        "pages/register/register",
+        "pages/singerDetail/singerDetail",
+        "pages/play/play",
+        "pages/album/album",
+        "pages/myOrder/myOrder",
+        "pages/searchResult/searchResult"
+    ],
+    "tabBar": {
+      "color": "#777777",
+      "selectedColor": "#c20c0c",
+      "list": [{
+        "pagePath": "pages/songlist/songlist",
+        "text": "首页",
+        "iconPath": "/image/music_none.png",
+        "selectedIconPath": "/image/music_choice.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "/image/find_none.png",
+        "selectedIconPath": "/image/find_choice.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/me_none.png",
+        "selectedIconPath": "/image/me_choice.png"
+      }]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#c20c0c",
+        "navigationBarTitleText": "课设",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+      "music_menu": "/components/bottomMenu/menu"
+    }
+}
